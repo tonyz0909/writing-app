@@ -3,10 +3,9 @@ from app import app
 
 @app.route('/')
 @app.route('/index')
+@app.route('/results')
 def index():
     return render_template('index.html', title='Home')
-
-@app.route('/results')
 def results():
     # return 'results'
     return render_template('results.html', title='Results')
