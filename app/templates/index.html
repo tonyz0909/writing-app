@@ -21,10 +21,10 @@
             <label for="exampleFormControlFile1">Or upload a document</label>
             <input type="file" class="form-control-file" id="exampleFormControlFile1">
             </div>
-             <button type="submit" class="btn btn-primary">Submit</button>
             </form>
+            <button id="submit" class="btn btn-primary">Submit</button>
             <p id="results"></p>
         </div>
     </body>
-    <script src="./js/parse.js"></script>
+    <script src="{{ url_for('static', filename="js/parse.js")}}"></script>
 </html>
