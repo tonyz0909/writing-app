@@ -19,8 +19,9 @@
               </div>
               <div class="form-group">
             <label for="exampleFormControlFile1">Or upload a document</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            <input type="file" class="form-control-file" id="fileToLoad">
             </div>
+             <button type="submit" onclick="loadFileAsText()" class="btn btn-primary">Submit</button>
             </form>
             <button id="submit" class="btn btn-primary">Submit</button>
             <p id="results"></p>
@@ -28,3 +29,4 @@
     </body>
     <script src="{{ url_for('static', filename="js/parse.js")}}"></script>
 </html>
+
